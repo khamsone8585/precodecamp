@@ -1,0 +1,155 @@
+body{
+    font-family: 'Raleway','Prompt', sans-serif;
+}
+h2{
+    color: black;
+}
+/* ------------------------------------------------- */
+/* ตอบคำถามกาน 4 ข้อใน Lab_Css: ให้หาว่าแต่ละอันคีอไร และ ให้สร้างไฟล์ HTML ในกานแสดงตัวอย่างของแต่ละอัน  */
+/* ------------------------------------------------- */
+
+/* Toolthip style */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Pagination style*/
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: blue;
+    color: white;
+}
+
+.pagination a:hover:not(.active)        {background-color: #ddd;}
+
+/* Navigatior Bar style*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+/* Dropdown style */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------------------------------------------------- */
+/* Lab_CSS_grid_or_flex ให้หาเว็บ ข่าว 1 เว็บ
+    เว็บช็อบปี้ง 1 เว็บ 
+    เว็บกระทู้ 1 เว็บ   */
+/* ------------------------------------------------- */
+#news_web_sample{
+    width: 100%;
+    height: 700px;
+}
+#news_web_sample img{
+    width: 100%;
+    height: 700px;
+}
+/* Page-Layout */
+.section{
+    width: 100%;
+}
+.inner-wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+.section.header{
+    background-color: red;
+}
+.section.header .inner-wrapper .flex-container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between
+}
+.section.header .inner-wrapper .flex-container .item{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    margin-right: 10px;
+    padding: 16px;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.section.contents .inner-wrapper .flex-main-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: ;
+    box-sizing: border-box;
+}
+
+.item-content{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding: 0px 10px;
+}
+.item-1{
+    align-self: flex-start;
+    width: 66.66%;
+}
+.item-2{
+    width: 33.33%;
+}
+.content{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+}
